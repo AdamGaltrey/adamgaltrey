@@ -10,7 +10,7 @@ const Head = () => (
         <meta name="description" content={defaultDescription}/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Open+Sans&display=swap" rel="stylesheet" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png"/>
