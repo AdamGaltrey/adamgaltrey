@@ -1,0 +1,28 @@
+{
+  "name": "adamgaltrey",
+  "version": "1.0.0",
+  "description": "My personal website, developed using NextJS and ReactJS.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamGaltrey/adamgaltrey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamGaltrey/adamgaltrey/issues"
+  },
+  "homepage": "https://github.com/AdamGaltrey/adamgaltrey#readme",
+  "dependencies": {
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
