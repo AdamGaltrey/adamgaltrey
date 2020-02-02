@@ -1,0 +1,25 @@
+@import "./constants";
+
+nav {
+  position: absolute;
+  display: flex;
+  right: 30px;
+  top: 30px;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      display: flex;
+      padding: 0 20px;
+      transition: color 0.35s ease;
+
+      &:hover {
+        cursor: pointer;
+        color: $highlight-colour-red;
+      }
+    }
+
+  }
+}

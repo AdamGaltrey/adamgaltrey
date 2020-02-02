@@ -1,8 +1,7 @@
-$background-colour: #262032;
-$highlight-colour-red: #E83F6F;
-$highlight-colour-yellow: #E8C547;
-$font-colour: #DBE5F1;
-$font-colour-dark: rgba(219, 229, 241, 0.75);
+@import "./navbar";
+@import "./constants";
+@import "./animations";
+
 
 html {
   background: rgb(39, 33, 54);
@@ -19,6 +18,7 @@ html, body, #__next, #page-wrapper {
   color: $font-colour;
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .font-dark {
@@ -32,15 +32,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 p {
@@ -61,10 +61,7 @@ $left-panel-width: 125px;
   position: fixed;
   width: $left-panel-width;
   height: 100vh;
-}
-
-.social-icons {
-
+  animation: slide-in-left 0.45s ease-out;
 }
 
 .main-panel {
