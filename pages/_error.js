@@ -2,7 +2,7 @@ import React from 'react'
 import "~/styles/index.scss"
 import Head from "~/components/Head";
 
-const Error = (props) => (
+const Error = props => (
     <div id="page-wrapper">
         <Head/>
 

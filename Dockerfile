@@ -15,8 +15,3 @@ RUN npm run build
 
 # Running the app
 CMD [ "npm", "start" ]
-
-# To publish this docker file
-# -----------------------------
-# All in one cmd: docker build -t adamgaltrey/website:dev . ; docker tag adamgaltrey/website:dev adamgaltrey/website:dev ; docker push adamgaltrey/website:dev
-# -----------------------------
