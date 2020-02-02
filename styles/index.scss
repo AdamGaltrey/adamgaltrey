@@ -1,11 +1,51 @@
-* {
-  font-family: 'Open Sans', sans-serif;
-}
+$background-colour: #262032;
+$highlight-colour-red: #E83F6F;
+$highlight-colour-yellow: #E8C547;
+$font-colour: #DBE5F1;
+$font-colour-dark: rgba(219, 229, 241, 0.75);
 
 html, body, #__next, #page-wrapper {
   display: block;
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: #fff;
+  background-color: $background-colour;
+  color: $font-colour;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.font-dark {
+  color: $font-colour-dark;
+}
+
+h1, h2, h3 {
+  margin: 5px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.highlight-red {
+  color: $highlight-colour-red;
+}
+
+.highlight-yellow {
+  color: $highlight-colour-yellow;
 }
