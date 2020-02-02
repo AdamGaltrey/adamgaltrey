@@ -15,7 +15,7 @@ const Index = () => (
         <h1 className='highlight-red'>This is a H1 Block Highlighted</h1>
         <h2 className='highlight-red'>This is a H2 Block Highlighted</h2>
         <h3 className='highlight-red'>This is a H3 Block Highlighted</h3>
-        <p>This is a <span className='highligh-red'>standard paragraph</span> with dark font.</p>
+        <p>This is a <span className='highlight-red'>standard paragraph</span> with highlighted font.</p>
     </div>
 );
 
