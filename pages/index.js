@@ -1,7 +1,9 @@
-export default function Index() {
-    return (
-        <div>
-            <p>Hello Next.js</p>
-        </div>
-    );
-}
+import "~/styles/index.scss";
+
+const Index = () => (
+    <div>
+        <p>Hello Next.js</p>
+    </div>
+);
+
+export default Index;
