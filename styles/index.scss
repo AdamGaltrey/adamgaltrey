@@ -1,11 +1,17 @@
 @import "./navbar";
 @import "./constants";
 @import "./animations";
-
+@import "./media-queries";
+@import "./hamburgers/hamburgers.scss";
 
 html {
   background: rgb(39, 33, 54);
   background: radial-gradient(circle, rgba(39, 33, 54, 1) 40%, rgba(38, 32, 50, 1) 100%);
+}
+
+::selection, ::-moz-selection {
+  color: $highlight-colour-red !important;
+  background: $highlight-colour-red !important;
 }
 
 html, body, #__next, #page-wrapper {
@@ -33,14 +39,24 @@ h1, h2, h3 {
 
 h1 {
   font-size: 3.5rem;
+  @include desktop-and-below {
+    font-size: 2.5em;
+  }
 }
 
 h2 {
   font-size: 2.5rem;
+  @include desktop-and-below {
+    font-size: 1.7rem;
+  }
 }
 
 h3 {
   font-size: 1.7rem;
+  @include desktop-and-below {
+    font-size: 1.3rem;
+    line-height: 30px;
+  }
 }
 
 p {
@@ -75,6 +91,16 @@ $left-panel-width: 125px;
   text-align: center;
   margin: 0 auto;
   height: 100vh;
+
+  @include desktop-and-below {
+    max-width: 100%;
+    padding: 0 1rem;
+
+    &.first-panel {
+      height: calc(100% - 200px);
+      margin-bottom: 100px;
+    }
+  }
 }
 
 .centered {
@@ -92,6 +118,24 @@ $left-panel-width: 125px;
   max-width: 950px;
   display: flex;
   flex-direction: column;
+
+  @include tablet-landscape-and-below {
+    max-width: 65%;
+  }
+
+  @include tablet-portrait-and-below {
+    max-width: 85%;
+  }
+
+  @include mobile-landscape-and-below {
+    max-width: 100%;
+  }
+
+  span {
+    @include mobile-landscape-and-below {
+      display: block;
+    }
+  }
 }
 
 img.head-shot {
@@ -103,6 +147,43 @@ img.head-shot {
   left: 30px;
 }
 
+img.head-shot-mobile {
+  display: flex;
+  $headShotSize: 60px;
+  width: $headShotSize;
+  height: $headShotSize;
+}
+
+
+.mobile-footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 60px;
+  align-items: center;
+
+  @include desktop-and-up {
+    display: none;
+  }
+
+  img {
+    margin: 0 20px;
+  }
+}
+
+.mobile-only {
+  @include desktop-and-up {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @include desktop-and-below {
+    display: none !important;
+  }
+}
+
 .social-icons {
   display: flex;
   height: 100%;
@@ -111,19 +192,23 @@ img.head-shot {
   justify-content: center;
 
   img {
-    //width: 50px;
-    object-fit: contain;
-    display: flex;
-    width: auto;
-    height: 25px;
     margin: 15px 0;
-    filter: brightness(0) invert(0.80);
-    transition: all 0.35s ease;
+  }
 
-    &:hover {
-      filter: none;
-      cursor: pointer;
-      transform: scale(1.15);
-    }
+}
+
+img.social {
+  //width: 50px;
+  object-fit: contain;
+  display: flex;
+  width: auto;
+  height: 25px;
+  filter: brightness(0) invert(0.80);
+  transition: all 0.35s ease;
+
+  &:hover {
+    filter: none;
+    cursor: pointer;
+    transform: scale(1.15);
   }
 }

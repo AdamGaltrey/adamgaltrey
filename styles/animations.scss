@@ -56,6 +56,25 @@
   animation: fade-in 1s ease-out;
 }
 
+.fade-in-anim-desktop-only {
+  @include tablet-portrait-and-up {
+    animation: fade-in 1s ease-out;
+  }
+}
+
+.fade-in-anim-mobile-only {
+  @include mobile-devices-only {
+    animation: fade-in 1s ease-out;
+  }
+}
+
+
+.fade-in-anim-mobile-only {
+  @include mobile-devices-only {
+    animation: fade-in 1s ease-out;
+  }
+}
+
 .fade-in-anim-2 {
   animation: fade-in-2 1.5s ease-out;
 }
