@@ -73,6 +73,13 @@ $mq-desktop				: 1382px !default;
   }
 }
 
+// Everything above and including the mobile landscape width
+@mixin mobile-landscape-and-up-tablet-height {
+  @media only screen and (min-width: $mq-mobile-portrait + 1) and (min-height: $mq-tablet-portrait){
+    @content;
+  }
+}
+
 // Both the portrait and landscape width of the tablet
 // Larger than a landscape mobile but less than or equal to a landscape tablet
 @mixin tablet-only {

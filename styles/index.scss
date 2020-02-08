@@ -2,6 +2,9 @@
 @import "./constants";
 @import "./animations";
 @import "./media-queries";
+@import "./buttons";
+@import "./fonts";
+@import "./spacing";
 @import "./hamburgers/hamburgers.scss";
 
 html {
@@ -17,7 +20,7 @@ html {
 html, body, #__next, #page-wrapper {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   //background-color: $background-colour;
@@ -25,50 +28,6 @@ html, body, #__next, #page-wrapper {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-.font-dark {
-  color: $font-colour-dark;
-}
-
-h1, h2, h3 {
-  margin: 5px;
-  font-weight: 500;
-  font-family: Montserrat-Medium, sans-serif;
-}
-
-h1 {
-  font-size: 3.5rem;
-  @include desktop-and-below {
-    font-size: 2.5em;
-  }
-}
-
-h2 {
-  font-size: 2.5rem;
-  @include desktop-and-below {
-    font-size: 1.7rem;
-  }
-}
-
-h3 {
-  font-size: 1.7rem;
-  @include desktop-and-below {
-    font-size: 1.3rem;
-    line-height: 30px;
-  }
-}
-
-p {
-  font-size: 1rem;
-}
-
-.highlight-red {
-  color: $highlight-colour-red;
-}
-
-.highlight-yellow {
-  color: $highlight-colour-yellow;
 }
 
 $left-panel-width: 125px;
@@ -97,7 +56,7 @@ $left-panel-width: 125px;
     padding: 0 1rem;
 
     &.first-panel {
-      height: calc(100% - 200px);
+      height: calc(100vh - 200px);
       margin-bottom: 100px;
     }
   }
@@ -110,17 +69,13 @@ $left-panel-width: 125px;
   margin: auto 0;
 }
 
-.mb-30 {
-  margin-bottom: 30px;
-}
-
 .hero-text {
   max-width: 950px;
   display: flex;
   flex-direction: column;
 
   @include tablet-landscape-and-below {
-    max-width: 65%;
+    max-width: 75%;
   }
 
   @include tablet-portrait-and-below {
@@ -169,6 +124,12 @@ img.head-shot-mobile {
 
   img {
     margin: 0 20px;
+  }
+}
+
+.mobile-only-burger {
+  @include  mobile-landscape-and-up-tablet-height {
+    display: none !important;
   }
 }
 

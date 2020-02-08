@@ -27,7 +27,7 @@ const Index = () => {
                     <img className='mobile-only head-shot-mobile fade-in-anim' src='/headshot.png'/>
 
                     <button
-                        className={classNames("fade-in-anim burger-menu hamburger hamburger--spring mobile-only", {'is-active': menuOpen})}
+                        className={classNames("fade-in-anim burger-menu hamburger hamburger--spring mobile-only-burger", {'is-active': menuOpen})}
                         onClick={() => setMenuOpen(!menuOpen)}
                         type="button"
                     >
@@ -50,11 +50,26 @@ const Index = () => {
 
                     <div className='centered'>
                         <div className='hero-text fade-in-anim-2'>
-                            <h1 className='mb-30'>Hey, I'm <span className='highlight-red'>Adam Galtrey</span></h1>
-                            <h3>
+                            <h1 className='mb-50'>Hey, I'm <span className='highlight-red'>Adam Galtrey</span></h1>
+                            <h3 className='font-dark'>
                                 I’m a full stack developer based in London, UK with a passion for building high quality websites and
                                 applications.
                             </h3>
+                        </div>
+
+                        <a href='mailto:adam.galtrey@gmail.com' className='btn-thin mt-50 fade-in-anim-2'>
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div className='page-panel'>
+
+                    <div className='centered'>
+                        <div className='hero-text fade-in-anim-2'>
+                            <h1 className='mb-30'>This is <span className='highlight-red'>Panel 2</span></h1>
                         </div>
                     </div>
 
