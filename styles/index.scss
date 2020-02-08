@@ -152,8 +152,11 @@ img.head-shot-mobile {
   //align-items: center;
   justify-content: center;
 
-  img {
+  a {
+    display: flex;
     margin: 15px 0;
+    width: auto;
+    justify-content: center;
   }
 
 }
