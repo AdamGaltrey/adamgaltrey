@@ -1,0 +1,40 @@
+{
+  "title": "Technical Skills",
+  "skills": [
+    {
+      "title": "Java",
+      "experience": 7,
+      "icon": "/skills/sm/java.png"
+    },
+    {
+      "title": "Spring",
+      "experience": 3,
+      "icon": "/skills/sm/spring.png"
+    },
+    {
+      "title": "React",
+      "experience": 3,
+      "icon": "/skills/sm/react.png"
+    },
+    {
+      "title": "Node JS",
+      "experience": 2,
+      "icon": "/skills/sm/nodejs.png"
+    },
+    {
+      "title": "Next JS",
+      "experience": 1,
+      "icon": "/skills/sm/nextjs.png"
+    },
+    {
+      "title": "Javascript",
+      "experience": 5,
+      "icon": "/skills/sm/javascript.jpg"
+    },
+    {
+      "title": "Python",
+      "experience": 1,
+      "icon": "/skills/sm/python.png"
+    }
+  ]
+}

@@ -51,6 +51,7 @@
     width: 320px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px 0px #000;
+    transition: all 0.25s ease-in-out;
 
     @include tablet-landscape-and-below {
       width: 260px;
@@ -62,6 +63,7 @@
 
     &:hover {
       cursor: pointer;
+      transform: scale(1.05);
     }
   }
 }

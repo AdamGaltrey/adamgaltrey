@@ -1,0 +1,107 @@
+@import "../media-queries";
+@import "../constants";
+
+
+.skills-contents {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 1005px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  h1 {
+    align-self: flex-start;
+    margin-bottom: 30px;
+  }
+
+  @include mobile-landscape-and-below {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  @include tablet-portrait-and-below {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+.skills-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  min-width: 320px;
+  width:48%;
+  box-sizing: border-box;
+
+  @include mobile-portrait-and-below {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  @include mobile-landscape-and-below {
+    width: 48%;
+    margin: 0 10px 20px 0;
+  }
+
+  @include tablet-portrait-and-below {
+    width: 48%;
+    margin: 0 13px 20px 0;
+  }
+
+  @include tablet-landscape-and-below {
+    width: 48%;
+    margin: 0 13px 20px 0;
+  }
+
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 0 15px 20px 0;
+
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .skills-prof {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    line-height: 2rem;
+    width: 100%;
+    white-space: nowrap;
+    justify-content: space-between;
+
+    span {
+      display: flex;
+      font-size: 1.5rem;
+
+      @include mobile-portrait-and-below {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  p.skills-desc {
+    text-align: left;
+  }
+
+  img {
+    width: 40px;
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+    object-fit: contain;
+  }
+}

@@ -2,7 +2,7 @@ import {forwardRef} from 'react';
 import {title, description} from '~/locale/about';
 
 const AboutPanel = forwardRef((props, ref) => (
-    <div className='page-panel' ref={ref}>
+    <div className='page-panel spaced' ref={ref}>
 
         <div className='centered'>
             <div className='about-contents'>

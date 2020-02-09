@@ -7,6 +7,7 @@
 @import "./spacing";
 @import "./hamburgers/hamburgers.scss";
 @import "./panels/about";
+@import "./panels/skills";
 
 html {
   background: rgb(39, 33, 54);
@@ -46,6 +47,11 @@ $left-panel-width: 125px;
 }
 
 .page-panel {
+
+  &.spaced {
+    margin-bottom: 250px;
+  }
+
   display: flex;
   flex-direction: column;
   max-width: 80%;
@@ -56,7 +62,6 @@ $left-panel-width: 125px;
     max-width: 100%;
     padding: 0 1rem;
   }
-
 
   &.first-panel {
     height: 100vh;
