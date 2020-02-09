@@ -6,6 +6,7 @@
 @import "./fonts";
 @import "./spacing";
 @import "./hamburgers/hamburgers.scss";
+@import "./panels/about";
 
 html {
   background: rgb(39, 33, 54);
@@ -48,16 +49,22 @@ $left-panel-width: 125px;
   flex-direction: column;
   max-width: 80%;
   text-align: center;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 0 auto 100px auto;
 
   @include desktop-and-below {
     max-width: 100%;
     padding: 0 1rem;
+  }
 
-    &.first-panel {
-      height: calc(100vh - 200px);
+
+  &.first-panel {
+    height: 100vh;
+    padding-top: 30px;
+    @include desktop-and-below {
+      height: calc(100vh - 100px);
       margin-bottom: 100px;
+      margin-top: 0;
+      padding-top: 0;
     }
   }
 }
@@ -87,7 +94,7 @@ $left-panel-width: 125px;
   }
 
   span {
-    @include mobile-landscape-and-below {
+    @include mobile-portrait-and-below {
       display: block;
     }
   }
@@ -128,7 +135,7 @@ img.head-shot-mobile {
 }
 
 .mobile-only-burger {
-  @include  mobile-landscape-and-up-tablet-height {
+  @include mobile-landscape-and-up-tablet-height {
     display: none !important;
   }
 }

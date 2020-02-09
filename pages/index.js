@@ -1,6 +1,7 @@
 import "~/styles/index.scss";
 import {useState} from 'react';
 import classNames from 'classnames';
+import AboutPanel from "~/components/AboutPanel";
 
 const Index = () => {
 
@@ -78,15 +79,7 @@ const Index = () => {
 
                 </div>
 
-                <div className='page-panel'>
-
-                    <div className='centered'>
-                        <div className='hero-text fade-in-anim-2'>
-                            <h1 className='mb-30'>This is <span className='highlight-red'>Panel 2</span></h1>
-                        </div>
-                    </div>
-
-                </div>
+                <AboutPanel />
 
                 <div className='mobile-footer'>
                     <a href='mailto:adam.galtrey@gmail.com'>

@@ -3,6 +3,11 @@
 .btn-thin {
   outline: none;
   padding: 20px;
+
+  @include mobile-devices-only {
+    padding: 8px 15px;
+  }
+
   font-size: 1.2rem;
   background-color: rgba(232, 63, 111, 0);
   color: $font-colour;
