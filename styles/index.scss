@@ -29,6 +29,7 @@ html, body, #__next, #page-wrapper {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 $left-panel-width: 125px;

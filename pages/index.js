@@ -1,11 +1,17 @@
 import "~/styles/index.scss";
-import {useState} from 'react';
+import {useState, createRef} from 'react';
 import classNames from 'classnames';
 import AboutPanel from "~/components/AboutPanel";
 
 const Index = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const aboutRef = createRef();
+    const scrollToRef = (ref) => {
+        console.log('Scrolling to ' + JSON.stringify(ref.current.offsetTop))
+        window.scrollTo(0, ref.current.offsetTop);
+    }
 
     return (
         <div id='page-wrapper'>
@@ -52,7 +58,7 @@ const Index = () => {
 
                     <nav className='fade-in-anim-desktop-only' aria-expanded={menuOpen}>
                         <ul>
-                            <li>About</li>
+                            <li onClick={() => scrollToRef(aboutRef)}>About</li>
                             <li>Skills</li>
                             <li>Experience</li>
                             <li>Projects</li>
@@ -79,7 +85,7 @@ const Index = () => {
 
                 </div>
 
-                <AboutPanel />
+                <AboutPanel ref={aboutRef}/>
 
                 <div className='mobile-footer'>
                     <a href='mailto:adam.galtrey@gmail.com'>

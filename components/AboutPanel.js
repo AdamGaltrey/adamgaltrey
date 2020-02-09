@@ -1,7 +1,8 @@
+import {forwardRef} from 'react';
 import {title, description} from '~/locale/about';
 
-const AboutPanel = () => (
-    <div className='page-panel'>
+const AboutPanel = forwardRef((props, ref) => (
+    <div className='page-panel' ref={ref}>
 
         <div className='centered'>
             <div className='about-contents'>
@@ -20,6 +21,6 @@ const AboutPanel = () => (
         </div>
 
     </div>
-);
+));
 
 export default AboutPanel;
