@@ -2,6 +2,8 @@ import "~/styles/index.scss";
 import {useState, createRef} from 'react';
 import classNames from 'classnames';
 import AboutPanel from "~/components/AboutPanel";
+import IndexPanel from "~/components/IndexPanel";
+import SocialLinks from "~/components/SocialLinks";
 
 const Index = () => {
 
@@ -9,7 +11,6 @@ const Index = () => {
 
     const aboutRef = createRef();
     const scrollToRef = (ref) => {
-        console.log('Scrolling to ' + JSON.stringify(ref.current.offsetTop))
         window.scrollTo(0, ref.current.offsetTop);
     }
 
@@ -19,25 +20,7 @@ const Index = () => {
             <div className='left-panel desktop-only'>
                 <img className='head-shot fade-in-anim' src='/headshot.png'/>
 
-                <div className='social-icons fade-in-anim-2-left'>
-                    <a href='mailto:adam.galtrey@gmail.com'>
-                        <img className='social' src='/social/sm/email.png'/>
-                    </a>
-
-                    <a href='https://github.com/AdamGaltrey' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/github.png'/>
-                    </a>
-
-                    <a href='https://www.linkedin.com/in/adam-galtrey-b48ab3109/' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/linkedin.png'/>
-                    </a>
-                    <a href='https://stackoverflow.com/users/5182868/adam' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/stackoverflow.png'/>
-                    </a>
-                    <a href='https://www.instagram.com/adamgaltrey/' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/instagram.png'/>
-                    </a>
-                </div>
+                <SocialLinks className={'social-icons fade-in-anim-2-left'}/>
             </div>
 
             <div className='main-panel'>
@@ -66,46 +49,11 @@ const Index = () => {
                     </nav>
                 </div>
 
-                <div className='page-panel first-panel'>
-
-                    <div className='centered'>
-                        <div className='hero-text fade-in-anim-2'>
-                            <h1 className='mb-50'>Hey, I'm <span className='highlight-red'>Adam Galtrey</span></h1>
-                            <h3 className='font-dark'>
-                                I’m a full stack developer based in London, UK with a passion for building high quality websites and
-                                applications.
-                            </h3>
-                        </div>
-
-                        <a href='mailto:adam.galtrey@gmail.com' className='btn-thin mt-50 fade-in-anim-2'>
-                            Contact Me
-                        </a>
-
-                    </div>
-
-                </div>
+                <IndexPanel/>
 
                 <AboutPanel ref={aboutRef}/>
 
-                <div className='mobile-footer'>
-                    <a href='mailto:adam.galtrey@gmail.com'>
-                        <img className='social' src='/social/sm/email.png'/>
-                    </a>
-
-                    <a href='https://github.com/AdamGaltrey' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/github.png'/>
-                    </a>
-
-                    <a href='https://www.linkedin.com/in/adam-galtrey-b48ab3109/' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/linkedin.png'/>
-                    </a>
-                    <a href='https://stackoverflow.com/users/5182868/adam' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/stackoverflow.png'/>
-                    </a>
-                    <a href='https://www.instagram.com/adamgaltrey/' target='_blank' rel='noopener'>
-                        <img className='social' src='/social/sm/instagram.png'/>
-                    </a>
-                </div>
+                <SocialLinks className={'mobile-footer'}/>
 
             </div>
 
