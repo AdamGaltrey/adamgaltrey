@@ -4,12 +4,14 @@ import classNames from 'classnames';
 import AboutPanel from "~/components/AboutPanel";
 import IndexPanel from "~/components/IndexPanel";
 import SocialLinks from "~/components/SocialLinks";
+import SkillsPanel from "~/components/SkillsPanel";
 
 const Index = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
     const aboutRef = createRef();
+    const skillsRef = createRef();
     const scrollToRef = (ref) => {
         window.scrollTo(0, ref.current.offsetTop);
     }
@@ -42,7 +44,7 @@ const Index = () => {
                     <nav className='fade-in-anim-desktop-only' aria-expanded={menuOpen}>
                         <ul>
                             <li onClick={() => scrollToRef(aboutRef)}>About</li>
-                            <li>Skills</li>
+                            <li onClick={() => scrollToRef(skillsRef)}>Skills</li>
                             <li>Experience</li>
                             <li>Projects</li>
                         </ul>
@@ -52,6 +54,8 @@ const Index = () => {
                 <IndexPanel/>
 
                 <AboutPanel ref={aboutRef}/>
+
+                <SkillsPanel ref={skillsRef}/>
 
                 <SocialLinks className={'mobile-footer'}/>
 
