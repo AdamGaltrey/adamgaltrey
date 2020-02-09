@@ -17,6 +17,11 @@
       "icon": "/skills/sm/react.png"
     },
     {
+      "title": "HTML/CSS",
+      "experience": 3,
+      "icon": "/skills/sm/htmlcss.png"
+    },
+    {
       "title": "Node JS",
       "experience": 2,
       "icon": "/skills/sm/nodejs.png"

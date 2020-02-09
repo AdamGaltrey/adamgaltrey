@@ -7,7 +7,7 @@ const AboutPanel = forwardRef((props, ref) => (
         <div className='centered'>
             <div className='about-contents'>
                 <div className='left-pane'>
-                    <h1 className='highlight-red'>{title}</h1>
+                    <h1 className='panel-title'>{title}</h1>
                     {
                         description.map((content, index) => <p key={`about-${index}`} dangerouslySetInnerHTML={{__html: content}} />)
                     }

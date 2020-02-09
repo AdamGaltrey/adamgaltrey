@@ -1,0 +1,50 @@
+{
+  "title": "Experience",
+  "experienceList": [
+    {
+      "company": "JP Morgan",
+      "role": "Senior Associate",
+      "tenure": "May 2019 - Present",
+      "icon": "/experience/sm/jpm.jpg",
+      "experience": [
+        "Working as a backend engineer to develop scalable microservices.",
+        "Using some of the latest technologies including: Java 11, Spring, Kafka and CockroachDB."
+      ]
+    },
+    {
+      "company": "American Express",
+      "role": "Engineer I",
+      "tenure": "Sept 2017 - May 2019",
+      "icon": "/experience/sm/amex.png",
+      "experience": [
+        "Fulfilment Manager - A distributed system for the processing of all card member redemption's worldwide. Microservices written using Java and Spring, utilising Kafka for high throughput.",
+        "<a href='https://spwp.americanexpress.com/spwp/?Face=en_GB&sorted_index=1' target='_blank' rel='noopener'>Select & Pay</a> - Enable customers to pay for transactions using their accrued membership reward points. Support redemption of points against recurring subscriptions such as Netflix or Spotify, and integrates with services such as Amazon Pay and PayPal to enable you to <a href='https://global.americanexpress.com/rewards/pay-with-points', target='_blank' rel='noopener'>pay with points</a> directly at checkout.",
+        "<a href='https://global.americanexpress.com/lounge-access/the-platinum-card' target='_blank' rel='noopener'>LoungeBuddy</a> - An application to allow platinum card members search for and view details of eligible airport lounges.",
+        "Spaceshare - An internal web application to optimise car park occupancy on Amex campuses by allocating empty car park spaces based on a fairness algorithm."
+      ]
+    },
+    {
+      "company": "University of Southampton",
+      "role": "Mechanical Engineering (BEng)",
+      "tenure": "Sep 2013 - Jun 2017",
+      "icon": "/experience/sm/soton.jpg",
+      "experience": [
+        "BEng, Mechanical Engineering, 2:1",
+        "My <a href='https://files.adamgaltrey.com/' target='_blank'>Dissertation</a> was to design and test an inertial measurement unit for automotive application, using a Kalman filter to improve the accuracy of the system."
+      ]
+    },
+    {
+      "company": "Freelance Programming",
+      "role": "Self Employed",
+      "tenure": "Mar 2011 - Jan 2017",
+      "icon": "/experience/sm/myself.jpg",
+      "experience": [
+        "Taught myself Java from the age of 15 and begun contributing to the Minecraft open source community on the <a href='https://bukkit.org/members/adamki11s.42417/' target='_blank' rel='noopener'>Bukkit</a> forums and was a member of staff for a brief period of time during University.",
+        "<a href='https://dev.bukkit.org/projects/regios' target='_blank' rel='noopener'>Regios</a> - Author of the popular region management plugin for Bukkit, has over 150,000 downloads to date.",
+        "<a href='https://github.com/AdamGaltrey/AStar-Pathfinding' target='_blank' rel='noopener'>A* pathfinding</a> - Developed the first open source A* implementation for Minecraft, receiving over 10,000 downloads.",
+        "<a href='https://bukkit.gamepedia.com/Plugin_Tutorial' target='_blank' rel='noopener'>Plugin Tutorial</a> - Original author of the first official wiki page on plugin development, has around 200,000 views to date.",
+        "Closed Source - Development of bespoke plugins & software for many of the leading Minecraft server networks including: MineHeroes, GrandTheftMinecart, FadeCloud and Desteria."      ]
+    }
+
+  ]
+}

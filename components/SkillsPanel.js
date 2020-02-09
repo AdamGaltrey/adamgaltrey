@@ -1,15 +1,13 @@
 import {forwardRef} from 'react';
 import {title, skills} from '~/locale/skills';
 
-const currentYear = new Date().getFullYear();
-
 const SkillsPanel = forwardRef((props, ref) => (
-    <div className='page-panel' ref={ref}>
+    <div className='page-panel spaced' ref={ref}>
 
         <div className='centered'>
 
             <div className='skills-contents'>
-                <h1 className='highlight-red'>{title}</h1>
+                <h1 className='panel-title'>{title}</h1>
                 <div className='skills-cards'>
 
                     {

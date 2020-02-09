@@ -20,7 +20,16 @@
     min-width: 100%;
   }
 
-  @include tablet-portrait-and-below {
+
+  @include tablet-landscape-and-below {
+    min-width: auto;
+  }
+
+  @include tablet-landscape-and-below {
+    width: 90%;
+  }
+
+  @include tablet-portrait-below-only {
     width: 100%;
     min-width: 100%;
   }
@@ -55,12 +64,12 @@
 
   @include tablet-portrait-and-below {
     width: 48%;
-    margin: 0 13px 20px 0;
+    margin: 0 11px 20px 0;
   }
 
   @include tablet-landscape-and-below {
     width: 48%;
-    margin: 0 13px 20px 0;
+    margin: 0 11px 20px 0;
   }
 
   background-color: rgba(255, 255, 255, 0.05);

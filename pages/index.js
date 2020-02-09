@@ -5,6 +5,7 @@ import AboutPanel from "~/components/AboutPanel";
 import IndexPanel from "~/components/IndexPanel";
 import SocialLinks from "~/components/SocialLinks";
 import SkillsPanel from "~/components/SkillsPanel";
+import ExperiencePanel from "~/components/ExperiencePanel";
 
 const Index = () => {
 
@@ -12,6 +13,7 @@ const Index = () => {
 
     const aboutRef = createRef();
     const skillsRef = createRef();
+    const experienceRef = createRef();
     const scrollToRef = (ref) => {
         window.scrollTo(0, ref.current.offsetTop);
     }
@@ -45,7 +47,7 @@ const Index = () => {
                         <ul>
                             <li onClick={() => scrollToRef(aboutRef)}>About</li>
                             <li onClick={() => scrollToRef(skillsRef)}>Skills</li>
-                            <li>Experience</li>
+                            <li onClick={() => scrollToRef(experienceRef)}>Experience</li>
                             <li>Projects</li>
                         </ul>
                     </nav>
@@ -56,6 +58,8 @@ const Index = () => {
                 <AboutPanel ref={aboutRef}/>
 
                 <SkillsPanel ref={skillsRef}/>
+
+                <ExperiencePanel ref={experienceRef}/>
 
                 <SocialLinks className={'mobile-footer'}/>
 
