@@ -32,6 +32,7 @@ html, body, #__next, #page-wrapper {
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 $left-panel-width: 125px;
