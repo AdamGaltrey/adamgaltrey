@@ -1,8 +1,9 @@
 {
   "title": "About Me",
   "description": [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus efficitur sit amet nisl eget porta. Suspendisse ac nisl nec mi dictum sodales quis ut lacus. Nulla ex sem, scelerisque ac viverra non, interdum pretium velit. Proin vitae velit erat. Fusce dui arcu, elementum ut lectus vitae, feugiat eleifend dolor. Suspendisse euismod orci a augue imperdiet interdum.",
-    "Cras arcu est, congue sit amet nisl eu, varius maximus quam. Vivamus euismod fermentum sapien ac tristique. In non justo in orci dignissim tincidunt sed a leo. Donec posuere tempus purus, tincidunt feugiat lectus ullamcorper sed. Etiam quam dui, vulputate id elit id, pretium euismod turpis.",
-    "Curabitur dui massa, interdum ut aliquam eu, tempor tincidunt ex. Nunc vehicula arcu quis justo convallis, nec ornare felis imperdiet. Pellentesque non lectus nec sapien imperdiet ornare eget ac nisl."
+    "Hey! I'm Adam, a full stack engineer currently working for JP Morgan in London, UK. Most of my experience lies in designing sleek backend microservices, but I also develop clean and responsive websites when I get time.",
+    "I graduated from the University of Southampton with a Bachelors of Engineering back in 2017, and kick started my career in technology on the Amex graduate program.",
+    "I taught myself Java from the age of 15 and was heavily involved in the Minecraft open source community for over 5 years. During this time I developed bespoke software for many of the leading server networks, and that experience gave me the skills I needed to help bootstrap my career in technology.",
+    "Below you will find a summary of my technical skills, my work experience and some of the exciting projects I've been a part of!"
   ]
 }
