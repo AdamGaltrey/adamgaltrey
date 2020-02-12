@@ -51,6 +51,10 @@ $left-panel-width: 125px;
 
   &.spaced {
     margin-bottom: 250px;
+
+    @include mobile-x-landscape-and-below {
+      margin-bottom: 100px;
+    }
   }
 
   display: flex;

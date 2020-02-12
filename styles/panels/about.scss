@@ -6,7 +6,7 @@
   flex-direction: row;
   width: 80%;
 
-  @include tablet-portrait-and-below {
+  @include tablet-landscape-and-below {
     width: 90%;
   }
 
