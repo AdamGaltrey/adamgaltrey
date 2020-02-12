@@ -10,6 +10,7 @@ RUN npm install --production
 # Copying source files
 COPY . .
 
+RUN npm i @next/bundle-analyzer -g
 # Building app
 RUN npm run build --production
 
