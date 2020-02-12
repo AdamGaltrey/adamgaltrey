@@ -17,7 +17,7 @@ const ExperiencePanel = forwardRef((props, ref) => (
                             return (
                                 <div className='experience-item' key={`company-${company}`}>
                                     <div className='experience-header'>
-                                        <img src={icon}/>
+                                        <img src={icon} alt={`Experience : ${company}`}/>
                                         <div className='experience-header-title'>
                                             <h2>{company}</h2>
                                             <span>{role}</span>

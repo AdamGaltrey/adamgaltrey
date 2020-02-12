@@ -42,7 +42,7 @@ const SkillsPanel = forwardRef((props, ref) => (
                             .sort((s1, s2) => s2.experience - s1.experience)
                             .map(skill => (
                                 <div className='skills-card' key={`skill-${skill.title}`}>
-                                    <img src={skill.icon}/>
+                                    <img src={skill.icon} alt={`Skill: ${skill.title}`}/>
                                     <div className='skills-prof'>
                                         <span>{skill.title}</span>
                                         <span className='font-dark'>{skill.experience} Year{skill.experience > 1 && 's'}</span>

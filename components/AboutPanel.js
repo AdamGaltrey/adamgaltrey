@@ -14,7 +14,7 @@ const AboutPanel = forwardRef((props, ref) => (
                 </div>
                 <div className='right-pane'>
                     <a href='https://www.linkedin.com/in/adam-galtrey-b48ab3109/' target='_blank' rel='noopener'>
-                        <img src='/headshot400.jpg'/>
+                        <img src='/headshot400.jpg' alt='Headshot Of Me'/>
                     </a>
                 </div>
             </div>

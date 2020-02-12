@@ -68,6 +68,11 @@ $left-panel-width: 125px;
     padding: 0 1rem;
   }
 
+  &.full-panel {
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
   &.first-panel {
     height: 100vh;
     padding-top: 30px;
@@ -85,6 +90,24 @@ $left-panel-width: 125px;
   flex-direction: inherit;
   align-items: center;
   margin: auto 0;
+}
+
+.hero-text-single {
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet-landscape-and-below {
+    max-width: 75%;
+  }
+
+  @include tablet-portrait-and-below {
+    max-width: 85%;
+  }
+
+  @include mobile-landscape-and-below {
+    max-width: 100%;
+  }
 }
 
 .hero-text {

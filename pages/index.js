@@ -6,6 +6,7 @@ import IndexPanel from "~/components/IndexPanel";
 import SocialLinks from "~/components/SocialLinks";
 import SkillsPanel from "~/components/SkillsPanel";
 import ExperiencePanel from "~/components/ExperiencePanel";
+import FinalPanel from "~/components/FinalPanel";
 
 const Index = () => {
 
@@ -14,6 +15,7 @@ const Index = () => {
     const aboutRef = createRef();
     const skillsRef = createRef();
     const experienceRef = createRef();
+    const contactRef = createRef();
     const scrollToRef = (ref) => {
         window.scrollTo(0, ref.current.offsetTop);
     }
@@ -22,7 +24,9 @@ const Index = () => {
         <div id='page-wrapper'>
 
             <div className='left-panel desktop-only'>
-                <img className='head-shot fade-in-anim' src='/headshot.png'/>
+                <a href='https://www.linkedin.com/in/adam-galtrey-b48ab3109/' target='_blank' rel='noopener'>
+                    <img className='head-shot fade-in-anim' src='/headshot.png' alt='Headshot Logo'/>
+                </a>
 
                 <SocialLinks className={'social-icons fade-in-anim-2-left'}/>
             </div>
@@ -31,7 +35,7 @@ const Index = () => {
 
                 <div className='nav-container'>
 
-                    <img className='mobile-only head-shot-mobile fade-in-anim' src='/headshot.png'/>
+                    <img className='mobile-only head-shot-mobile fade-in-anim' src='/headshot.png' alt='Headshot Logo'/>
 
                     <button
                         className={classNames("fade-in-anim burger-menu hamburger hamburger--spring mobile-only-burger", {'is-active': menuOpen})}
@@ -48,7 +52,7 @@ const Index = () => {
                             <li onClick={() => scrollToRef(aboutRef)}>About</li>
                             <li onClick={() => scrollToRef(skillsRef)}>Skills</li>
                             <li onClick={() => scrollToRef(experienceRef)}>Experience</li>
-                            <li>Projects</li>
+                            <li onClick={() => scrollToRef(contactRef)}>Contact</li>
                         </ul>
                     </nav>
                 </div>
@@ -60,6 +64,8 @@ const Index = () => {
                 <SkillsPanel ref={skillsRef}/>
 
                 <ExperiencePanel ref={experienceRef}/>
+
+                <FinalPanel ref={contactRef}/>
 
                 <SocialLinks className={'mobile-footer'}/>
 

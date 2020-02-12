@@ -53,6 +53,15 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5rem;
+
+  &.headline {
+    max-width: 900px;
+    font-size: 1.2rem;
+
+    span {
+      display: inline-block !important;
+    }
+  }
 }
 
 .highlight-red {
