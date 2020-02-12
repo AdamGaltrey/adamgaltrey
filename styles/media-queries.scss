@@ -46,6 +46,12 @@ $mq-desktop				: 1382px !default;
   }
 }
 
+@mixin mobile-portrait-and-below-sm {
+  @media (max-width: $mq-mobile-landscape + 1) {
+    @content;
+  }
+}
+
 // Everything above and including the mobile portrait
 @mixin mobile-portrait-and-up {
   @media (min-width: $mq-mobile-portrait) {

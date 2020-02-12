@@ -83,7 +83,7 @@
       $imgSizeMobile: 80px;
 
       @include tablet-landscape-and-below {
-        align-self: start;
+        align-self: center;
       }
 
       @include tablet-portrait-below-only {
@@ -109,11 +109,18 @@
       text-align: left;
 
       @include tablet-landscape-and-below {
-        align-self: start;
+        align-self: center;
+        text-align: center;
+        max-width: 80%;
+        margin-top: 10px;
       }
 
       @include tablet-portrait-below-only {
         align-self: center;
+      }
+
+      @include mobile-portrait-and-below {
+        text-align: left;
       }
 
       h2 {
